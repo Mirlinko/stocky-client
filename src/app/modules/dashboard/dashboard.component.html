@@ -4,6 +4,7 @@
       type="text" 
       name="Search"
       placeholder="Enter ticker symbol"
+      [disabled]="conditions.isStockDataLoading"
       [(ngModel)]="input.search"
       (keyup.enter)="onEnter()">
   </div>

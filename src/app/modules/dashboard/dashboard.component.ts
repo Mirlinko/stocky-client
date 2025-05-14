@@ -1,27 +1,38 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { debounceTime, Subject, Subscription } from 'rxjs';
+import { HttpService } from 'src/app/core/services/http.service';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],
-  standalone: false
 })
-export class DashboardComponent implements OnInit, OnDestroy {
+export class DashboardComponent {
   input = { search: "" };
   subscriptions: Array<Subscription> = [];
+  conditions = {
+    isStockDataLoading: false
+  }
   
-  constructor() { }
+  constructor(
+    private HttpService: HttpService
+  ) { }
 
-  ngOnInit() {
-    this.subscriptions.push();
-  }
+  async onEnter() {
+    this.setStockDataLoading(true);
 
-  ngOnDestroy(): void {
-    this.subscriptions.forEach(subscription => subscription.unsubscribe());
-  }
-
-  onEnter() {
+    const { data, error } = await this.HttpService.get("chart", { ticker: this.input.search });
     
+    this.setStockDataLoading(false);
+
+    if (!data || error) {
+      return console.warn(error || "No data found");
+    }
+
+    console.log({ data, error });
+  }
+
+  private setStockDataLoading(bool: boolean) {
+    this.conditions.isStockDataLoading = bool;
   }
 }

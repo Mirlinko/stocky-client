@@ -7,7 +7,6 @@ import { TABS } from 'src/app/constants/tabs';
   selector: 'app-layout',
   templateUrl: './app-layout.component.html',
   styleUrls: ['./app-layout.component.scss'],
-  standalone: false
 })
 export class AppLayoutComponent implements OnInit {
   title = "";

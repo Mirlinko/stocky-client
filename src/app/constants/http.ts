@@ -1,3 +1,1 @@
-export const API_KEYS = {
-  ALPHA_VANTAGE: "CQEGGIO2A1SCAO2P"
-}
+export const API_URL = "http://localhost:4300";

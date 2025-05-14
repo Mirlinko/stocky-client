@@ -5,15 +5,21 @@ import { HttpClientModule } from '@angular/common/http'
 import { RouterService } from './services/router.service';
 import { RouterModule } from '@angular/router';
 import { AppLayoutComponent } from './components/app-layout/app-layout.component';
+import { HttpService } from './services/http.service';
 
 
 @NgModule({
   declarations: [
     AppLayoutComponent
   ],
-  imports: [CommonModule, HttpClientModule, RouterModule],
+  imports: [
+    CommonModule, 
+    HttpClientModule, 
+    RouterModule
+  ],
   providers: [
-    RouterService
+    RouterService,
+    HttpService
   ],
   exports: [
     AppLayoutComponent
