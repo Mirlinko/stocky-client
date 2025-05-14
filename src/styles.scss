@@ -1,0 +1,19 @@
+// @import "bootstrap/scss/bootstrap";
+// @import "bootstrap-icons/font/bootstrap-icons.css";
+// @import "./styles/index.scss";
+@import "./styles//variables/colors.scss";
+
+html,
+body,
+app-root {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  // font-family: Roboto, "Helvetica Neue", sans-serif;
+  justify-content: center;
+  // background-color: $purple;
+  // background: linear-gradient(to top, $green, $purple);
+  overflow: hidden;
+}

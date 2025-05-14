@@ -1,0 +1,88 @@
+$white: #fff;
+
+$black: #000;
+$black-20-opacity: rgba($black, 0.2);
+$black-900: #101204;
+
+$grey-100: #F2F2F2;
+$grey-200: #E6E6E6;
+$grey-300: #CCCCCC;
+$grey-400: #BFBFBF;
+$grey-500: #ACB5BD;
+$grey-600: #999999;
+$grey-700: #7F7F7F;
+$grey-800: #666666;
+$grey-900: #5C6368;
+$grey-910: #52595E;
+$grey-920: #484E53; 
+$grey-930: #3E4449; 
+$grey-940: #343A3F; 
+$grey-950: #1D2125; 
+$grey-960: #171A1D; 
+$grey-970: #111214; 
+$grey-980: #0B0D0F; 
+$grey-990: #050708; 
+$grey-950-80-opacity: rgba($grey-950, 0.8); 
+
+$purple: #4D4189;
+$pink: #9F5082;
+
+$blue-500: #579CFF;
+$blue-510: lighten($blue-500, 10%);
+$blue-520: lighten($blue-500, 20%);
+$blue-530: lighten($blue-500, 30%);
+
+// GREEN
+$green-bold: #4BCE97;
+$green: #206D4D;
+$green-subtle: #174B35;
+
+// YELLOW
+$yellow-bold: #E1B205;
+$yellow: #7F5E02;
+$yellow-subtle: #533F04;
+
+// ORANGE
+$orange-bold: #A54700;
+$orange: #A54700;
+$orange-subtle: #702E01;
+
+// RED
+$red-bold: #F77167;
+$red: #AD2E24;
+$red-subtle: #5D1F1A;
+
+// PURPLE
+$purple-bold: #9E8FEF;
+$purple: #5D4DB2;
+$purple-subtle: #352C63;
+
+// BLUE
+$blue-bold: #579CFF;
+$blue: #0055CC;
+$blue-subtle: #0A326C;
+
+// SKY
+$sky-bold: #6BC3E0;
+$sky: #1F6982;
+$sky-subtle: #154554;
+
+// LIME
+$lime-bold: #94C747;
+$lime: #4C6B1F;
+$lime-subtle: #36471F;
+
+// PINK
+$pink-bold: #E774BB;
+$pink: #933D73;
+$pink-subtle: #4F253F;
+
+// GREY
+$grey-bold: #8C9BAA;
+$grey: #596773;
+$grey-subtle: #454F59;
+
+// BROWN
+$brown-bold: #A47148;
+$brown: #7B4F2D;
+$brown-subtle: #4D2F1F

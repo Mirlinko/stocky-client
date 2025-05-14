@@ -1,0 +1,3 @@
+export const API_KEYS = {
+  ALPHA_VANTAGE: "CQEGGIO2A1SCAO2P"
+}
