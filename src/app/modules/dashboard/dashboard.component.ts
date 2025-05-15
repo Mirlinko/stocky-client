@@ -10,6 +10,7 @@ import { HttpService } from 'src/app/core/services/http.service';
 export class DashboardComponent {
   input = { search: "" };
   subscriptions: Array<Subscription> = [];
+  stockData: any;
   conditions = {
     isStockDataLoading: false
   }
@@ -28,6 +29,8 @@ export class DashboardComponent {
     if (!data || error) {
       return console.warn(error || "No data found");
     }
+
+    this.stockData = data;
 
     console.log({ data, error });
   }
